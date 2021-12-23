@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +15,7 @@
 <body>
         <!-- Навигация -->
     <header class="header-page">
+        <div class="conteiner">
     <nav class="page-nav">
             <a class="link" href="./index.html">
                 <span class="logo">Web</span><span class="logo-studio">Studio</span></a>
@@ -29,18 +31,20 @@
            <li> <a class="link nav-adress-ithem" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
            <li> <a class="link nav-adress-ithem" href="tel:+380961111111">+38 096 111 11 11</a></li>
        </ul>
+        </div>  
     </header>
     <!--Шапка  -->
      <main class="hero">
-        <section>
-            <div class="backgraund-hero">
+        <section class="section">
+            <div class="backgraund-hero conteiner">
             <h1 class="hero-all">Эффективные решения <br> для вашего бизнеса</h1>
             <button type="button" class="button">Заказать услугу </button>
             </div>
         </section>
 
         <!-- Особенности -->
-     <section class="about">
+     <section class="about section">
+         <div class="conteiner ">
          <h2 hidden class="heading">Что мы умеем</h2>
          <ul class="list-features list">
              <li class="features-items text">
@@ -59,30 +63,34 @@
                 <h3 class="head-list">Современные технологии</h3>
                 <p class="text-list">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
-
         </ul>
+        </div>
        
      </section>
         <!-- Чем мы занимаемся  -->
-     <section>
+     <section class="section">
+         <div class="conteiner conteiner-list">
          <h2 class="heading">Чем мы занимаемся</h2>
          
-         <ul class="list">
-             <li>
+         <ul class="list works-ithem">
+             <li class="photo-works">
                 <img src="./imeges/portfol.jpg" alt="Фото работы" width="370">
              </li> 
        
-            <li>
+            <li class="photo-works">
                   <img src="./imeges/photo.jpg" alt="Фото работы" width="370">
             </li>
        
-            <li>
+            <li class="photo-works">
                     <img src="./imeges/photow.jpg" alt="Фото работы" width="370">
             </li>
         </ul>
+        </div>
      </section>
         <!-- Наша команда -->
-     <section>
+     <section class="section teams">
+         <div class="conteiner">
+         
          <h2 class="heading">Наша команда</h2>
          <ul class="list">
             <li>
@@ -107,13 +115,15 @@
             </li>
 
          </ul>
+        </div>
      </section>
 
     </main>
 
-    <div class="footer-backgraund">
+   
 
      <footer>
+        <div class="footer-backgraund">
         <a class="link" href="/index.html">
             <span class="logo">Web</span><span class="logo-studio-footer">Studio</span>
         </a>
@@ -125,8 +135,9 @@
           </ul>
  
         </address>
+        </div>
      </footer>
-    </div>
+    
 
 
 
