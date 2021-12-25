@@ -5,11 +5,14 @@
   --button-color: #2196f3;
   --hero-color: #ffffff;
   --letter-spacing: 0.03em;
+  --background-color: #2f303a;
 }
 
 body {
   font-family: Roboto, sans-serif;
-  background-color: #ffffff;
+  background-color: #e5e5e5;
+  width: 1600px;
+  margin: auto;
 }
 
 .list {
@@ -40,23 +43,21 @@ img {
 
 .conteiner {
   width: 1200px;
-  border: 2px solid tomato;
+  /* border: 2px solid tomato; */
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
-  /* outline: 2 solid red; */
 }
 
 .section {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  border: 4 solid black;
   padding-bottom: 94px;
 }
 
-.teams {
-  background-color: #f5f4fa;
+.section-hero {
+  background-color: var(--background-color);
 }
 
 address {
@@ -87,6 +88,7 @@ address {
 header {
   padding-top: 24px;
   padding-bottom: 24px;
+  background-color: var(--hero-color);
 }
 
 .logo {
@@ -96,6 +98,7 @@ header {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 
 .logo-studio {
@@ -113,6 +116,7 @@ header {
   line-height: 1.14;
   color: #212121;
   letter-spacing: 0.02em;
+  margin-left: 50px;
 }
 
 .nav-adress-ithem {
@@ -123,11 +127,35 @@ header {
   letter-spacing: 0.02em;
 }
 
+.nav-adress-ithem:first-child {
+  margin-right: 50px;
+}
+
 .current {
   color: var(--title-text-color);
 }
 
+.nav-list {
+  display: flex;
+}
+
+.conteiner-nav {
+  display: flex;
+}
+
+.adress-conteiner {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* Шапка */
+
 .hero-all {
   font-family: Roboto;
   font-style: normal;
@@ -162,13 +190,12 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  min-height: 50px;
   color: #ffffff;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.06em;
-  min-width: 200px;
 }
 
 .button-ithem:hover,
@@ -177,7 +204,7 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  color: #ffffff;
+  color: #f5f4fa;
   padding: 6px 22px;
   border: none;
 }
@@ -195,6 +222,10 @@ header {
 
 /* Особенности */
 
+.about {
+  margin-top: 94px;
+}
+
 .list-features {
   display: flex;
   flex-direction: row;
@@ -202,9 +233,11 @@ header {
 }
 
 .features-items {
-  width: 270px;
+  max-width: 270px;
   margin-left: 30px;
-  align-content: center;
+  justify-content: space-between;
+  align-content: flex-start;
+  text-align: left;
 }
 
 .features-items:first-child {
@@ -215,7 +248,6 @@ header {
   font-size: 36px;
   margin-top: 0%;
   margin-bottom: 0%;
-  padding-top: 94px;
   padding-bottom: 50px;
   line-height: 1.16;
   color: var(--prymary-text-color);
@@ -256,11 +288,50 @@ header {
   margin-left: 30px;
 }
 
+/* .photo-works:hover {
+  border: solid var(--button-color);
+} */
+
 .photo-works:first-child {
   margin-left: 0;
 }
 
 /* Наша команда */
+
+.teams {
+  margin-top: 94px;
+  background-color: #f5f4fa;
+}
+
+.conteiner-team {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.list-team {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+  justify-content: center;
+}
+
+.team-name {
+  margin-right: 15px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-name:first-child {
+  margin-left: 15px;
+}
+
+.team-name:first-child {
+  margin-left: 0%;
+}
 
 .name {
   font-weight: 500;
@@ -268,6 +339,12 @@ header {
   line-height: 1.18;
   text-transform: none;
   letter-spacing: var(--letter-spacing);
+  margin-top: 30px;
+}
+
+.text-list {
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 /* Подвал */
@@ -276,6 +353,19 @@ header {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.logo-ihtems {
+  margin-bottom: 20px;
+}
+
+.logo-footer {
+  font-family: Raleway;
+  color: #2196f3;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo-studio-footer {
@@ -291,17 +381,34 @@ header {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  margin-top: 20px;
 }
 
-/* За дивы сильно не ругайте
-то временно чтобы фон залить и текст
-был как в макете) */
-.footer-backgraund {
-  background-color: #2f303a;
+.section-fotter {
+  background-color: var(--background-color);
+  padding-top: 60px;
+}
+.list-adress {
+  margin-top: 9px;
 }
 
-/* Портфолио
-Футер и Хедер одинаковые */
+.adress {
+  margin-top: 20px;
+}
+
+/* Портфолио  */
+
+/* ФИЛЬТР КНОПОК */
+
+.list-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.buttons-num {
+  margin-right: 8px;
+}
 
 /* Проекты */
 
@@ -310,10 +417,37 @@ header {
   font-size: 18px;
   line-height: 2;
   color: #212121;
+  letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .text-progects {
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
+  letter-spacing: var(--letter-spacing);
+}
+
+.list-progects {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.list-progects:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.conteiner-progects {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.type-progects {
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -15,38 +15,44 @@
 
     <!-- Шапка Портфолио -->
     <header class="header-page">
-        <nav class="page-nav">
-            <a class="link" href="./index.html">
-                <span class="logo">Web</span><span class="logo-studio">Studio</span></a>
+        <div class="conteiner conteiner-nav">
+            <nav class="page-nav ">
+    
+                <a class="link" href="./index.html">
+                    <span class="logo">Web</span><span class="logo-studio">Studio</span></a>
     
                 <ul class="nav-list list">
                     <li class="nav-item link"><a class="link" href="./index.html">Студия</a></li>
-                    <li class="nav-item link"><a class="link current" href=".portfolio.html" target="_blank">Портфолио</a></li>
+                    <li class="nav-item link"><a class="link current" href="./portfolio.html" target="_blank">Портфолио</a></li>
                     <li class="nav-item link"><a class="link" href=".Cotacts.html">Контакты</a></li>
                 </ul>
-        </nav>
-    
-        <ul class="nav-adress list">
-            <li> <a class="link nav-adress-ithem" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li> <a class="link nav-adress-ithem" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
+            </nav>
+            <ul class="adress-conteiner list">
+                <li class="nav-adress-ithem"> <a class="link " href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="nav-adress-ithem"> <a class="link " href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
     </header>
 
         <!-- Навигация Портфолио -->
 
         <nav>
-            <ul class="list">
-                <li><button class="button-ithem" type="button">Все</button></li>
-                <li><button class="button-ithem" type="button">Веб-сайты</button></li>
-                <li><button class="button-ithem" type="button">Приложения</button></li>
-                <li><button class="button-ithem" type="button">Дизайн</button></li>
-                <li><button class="button-ithem" type="button">Маркетинг</button></li>
+            <div class="conteiner">
+            <ul class="list list-buttons">
+                <li class="buttons-num"><button class="button-ithem" type="button">Все</button></li>
+                <li class="buttons-num"><button class="button-ithem" type="button">Веб-сайты</button></li>
+                <li class="buttons-num"><button class="button-ithem" type="button">Приложения</button></li>
+                <li class="buttons-num"><button class="button-ithem" type="button">Дизайн</button></li>
+                <li class="buttons-num"><button class="button-ithem" type="button">Маркетинг</button></li>
             </ul>
-       </nav>
+            </div>
+        </nav>
 
         <!-- Проекты -->
 
         <main>
+             <section class="section">
+            <div class="conteiner conteiner-progects">
             <h2 hidden class="progects"> Проекты</h2>
             <ul class="type-progects list">
                 <li class="list-progects">
@@ -95,25 +101,30 @@
                     <p class="text-progects">Приложение</p>
                 </li>
             </ul>
+            </div>
+            </section>
         </main>
         
-    <div class="footer-backgraund">
-    
-        <footer>
-            <a class="link" href="/index.html">
-                <span class="logo">Web</span><span class="logo-studio-footer">Studio</span>
+<footer>
+    <section class="section-fotter">
+        <div class="footer-backgraund conteiner">
+            <a class="link logo-ihtems" href="/index.html">
+                <span class="logo-footer">Web</span><span class="logo-studio-footer">Studio</span>
             </a>
-            <address class="text">
+            <address class="adress">
                 <ul class="list address-text">
-                    <li><a class="link ithem-adress" href="https://goo.gl/maps/Gu5Dw9EAoeBzcQZ39">г. Киев, пр-т Леси
-                            Украинки, 26</a></li>
-                    <li><a class="link nav-adress-ithem" href="meilto:info@example.com">info@example.com</a></li>
-                    <li><a class="link nav-adress-ithem" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    <li class="list-adress"><a class="link ithem-adress" href="https://goo.gl/maps/Gu5Dw9EAoeBzcQZ39">г.
+                            Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="list-adress"><a class="link nav-adress-ithem"
+                            href="meilto:info@example.com">info@example.com</a></li>
+                    <li class="list-adress"><a class="link nav-adress-ithem" href="tel:+380991111111">+38 099 111 11
+                            11</a></li>
                 </ul>
-    
+
             </address>
-        </footer>
-    </div>
+        </div>
+    </section>
+</footer>
 
 </body>
 </html>
