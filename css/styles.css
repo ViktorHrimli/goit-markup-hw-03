@@ -10,8 +10,7 @@
 
 body {
   font-family: Roboto, sans-serif;
-  background-color: #e5e5e5;
-  /* width: 1600px; */
+  background-color: #fff;
   margin: auto;
 }
 
@@ -89,6 +88,7 @@ header {
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: var(--hero-color);
+  border: 1px solid #ececec;
 }
 
 .logo {
@@ -156,6 +156,10 @@ header {
   align-items: center;
 }
 
+.color-link {
+  color: var(--ithem-text-color);
+}
+
 /* Шапка */
 
 .hero-all {
@@ -198,6 +202,7 @@ header {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.06em;
+  border: none;
 }
 
 .button-ithem:hover,
@@ -268,19 +273,14 @@ header {
 .head-list {
   color: #212121;
   margin-bottom: 10px;
-  margin-top: 30px;
   font-weight: bold;
-  line-height: 14px;
+  line-height: 16px;
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing);
 }
 /* Чем мы занимаемся */
 
-/* .conteiner-list {
-  display: flex;
-  flex-wrap: wrap;
-} */
 .works-ithem {
   display: flex;
   justify-content: center;
@@ -303,6 +303,19 @@ header {
 .teams {
   margin-top: 94px;
   background-color: #f5f4fa;
+}
+
+.text-list-team {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.name-conteiner {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .conteiner-team {
@@ -337,16 +350,10 @@ header {
 
 .name {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.18;
   text-transform: none;
   letter-spacing: var(--letter-spacing);
-  margin-top: 30px;
-}
-
-.text-list {
-  margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 /* Подвал */
@@ -435,9 +442,9 @@ header {
   line-height: 2;
   color: #212121;
   letter-spacing: 0.06em;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 4px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
 }
 
 .text-progects {
@@ -445,7 +452,7 @@ header {
   line-height: 1.87;
   color: #757575;
   letter-spacing: var(--letter-spacing);
-  margin-left: 24px;
+  /* margin-left: 24px; */
 }
 
 .list-progects {
@@ -455,11 +462,17 @@ header {
   margin-left: 30px;
   margin-bottom: 30px;
   text-align: left;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .list-progects:nth-child(3n + 1) {
   margin-left: 0;
+}
+
+.ithem-conteiner-progects {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .conteiner-progects {
