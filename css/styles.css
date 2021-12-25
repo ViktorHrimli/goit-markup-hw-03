@@ -387,6 +387,7 @@ header {
 .section-fotter {
   background-color: var(--background-color);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .list-adress {
   margin-top: 9px;
@@ -411,6 +412,20 @@ header {
 }
 
 /* Проекты */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .ithem-progects {
   font-weight: bold;
